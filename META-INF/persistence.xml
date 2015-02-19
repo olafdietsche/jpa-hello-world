@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence">
+        <persistence-unit name="ContactManagement" transaction-type="RESOURCE_LOCAL">
+                <class>Contact</class>
+                <properties>
+                        <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+                        <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/DBNAME"/>
+                        <property name="javax.persistence.jdbc.user" value="DBUSER"/>
+                        <property name="javax.persistence.jdbc.password" value="DBPASSWORD"/>
+                        <property name="eclipselink.ddl-generation" value="create-tables"/>
+                </properties>
+        </persistence-unit>
+</persistence>
